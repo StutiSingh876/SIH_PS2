@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITO - Smart Intelligent Traffic Orchestrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <i data-lucide="train" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-slate-800">SITO</h1>
+                        <p class="text-sm text-slate-500">Smart Intelligent Traffic Orchestrator</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-slate-600 hover:text-slate-800 px-3 py-2 rounded-md text-sm font-medium">
+                        English
+                    </button>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-slate-800 mb-6">
+                Smart Intelligent Traffic Orchestrator
+            </h1>
+            <p class="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+                Revolutionizing railway traffic management with AI-powered optimization, 
+                real-time monitoring, and intelligent decision support for enhanced efficiency and safety.
+            </p>
+            
+            <!-- Login Form -->
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6 text-center">Sign In</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2">Username</label>
+                        <input type="text" class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter username">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2">Password</label>
+                        <input type="password" class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter password">
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+                            <span class="ml-2 text-sm text-slate-600">Remember me</span>
+                        </label>
+                        <a href="#" class="text-sm text-blue-600 hover:text-blue-800">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md font-medium">
+                        Sign In
+                    </button>
+                </form>
+            </div>
+
+            <!-- Features -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="brain" class="w-6 h-6 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800 mb-2">AI-Powered Optimization</h3>
+                    <p class="text-slate-600">Advanced machine learning algorithms for intelligent traffic management and conflict resolution.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="activity" class="w-6 h-6 text-green-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800 mb-2">Real-Time Monitoring</h3>
+                    <p class="text-slate-600">Live tracking of trains, signals, and infrastructure with instant updates and alerts.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="shield" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-800 mb-2">Safety First</h3>
+                    <p class="text-slate-600">Comprehensive safety protocols and emergency response systems for maximum protection.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-slate-400">&copy; 2024 SITO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

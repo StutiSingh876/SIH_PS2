@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITO Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-slate-800">SITO Training</h1>
+                            <p class="text-sm text-slate-500">Controller Training & Certification</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="bg-blue-500 rounded-lg px-3 py-2">
+                        <div class="text-sm text-white font-medium">Level: Intermediate</div>
+                    </div>
+                    <div class="text-sm text-slate-600">
+                        <span class="font-medium">Progress:</span>
+                        <span class="text-blue-600 font-medium">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="p-6">
+        <!-- Training Overview -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Progress Card -->
+            <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-800 mb-4">Training Progress</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm text-slate-600">Overall Progress</span>
+                            <span class="text-sm font-medium text-slate-800">75%</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">12</div>
+                            <div class="text-sm text-slate-600">Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">4</div>
+                            <div class="text-sm text-slate-600">Remaining</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Level -->
+            <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-800 mb-4">Current Level</h3>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="award" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <div class="text-2xl font-bold text-slate-800 mb-2">Intermediate</div>
+                    <div class="text-sm text-slate-600 mb-4">Controller Level 2</div>
+                    <div class="w-full bg-slate-200 rounded-full h-2">
+                        <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                    <div class="text-xs text-slate-500 mt-2">60% to Advanced</div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-800 mb-4">Recent Achievements</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <i data-lucide="trophy" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-slate-800">Efficiency Master</div>
+                            <div class="text-xs text-slate-500">Completed 10 scenarios with 95%+ efficiency</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i data-lucide="star" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-slate-800">Quick Responder</div>
+                            <div class="text-xs text-slate-500">Average response time under 3 seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Training Scenarios -->
+        <div class="bg-white rounded-lg border border-slate-200 shadow-sm mb-8">
+            <div class="p-6 border-b border-slate-200">
+                <h2 class="text-xl font-bold text-slate-800">Training Scenarios</h2>
+                <p class="text-slate-600 mt-1">Practice with realistic railway scenarios</p>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Basic Operations -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">Basic Operations</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">Completed</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Learn fundamental railway control operations with normal traffic conditions.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Easy</div>
+                            <button class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Retry
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Peak Hour Congestion -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">Peak Hour Congestion</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-yellow-100 text-yellow-700">In Progress</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Manage high traffic with 6 additional local trains during peak hours.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Medium</div>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm transition-colors">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Signal Failure -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">Signal Failure</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-700">Locked</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Handle signal failure at Junction B and manage cascading delays.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Hard</div>
+                            <button class="bg-slate-200 text-slate-500 px-3 py-1 rounded text-sm cursor-not-allowed" disabled>
+                                Locked
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Weather Disruption -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">Weather Disruption</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-700">Locked</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Manage operations during heavy fog conditions with reduced visibility.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Hard</div>
+                            <button class="bg-slate-200 text-slate-500 px-3 py-1 rounded text-sm cursor-not-allowed" disabled>
+                                Locked
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Train -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">Emergency Train</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-700">Locked</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Handle medical emergency special train with highest priority.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Expert</div>
+                            <button class="bg-slate-200 text-slate-500 px-3 py-1 rounded text-sm cursor-not-allowed" disabled>
+                                Locked
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- AI vs Manual -->
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-semibold text-slate-800">AI vs Manual</h3>
+                            <span class="text-xs px-2 py-1 rounded bg-slate-100 text-slate-700">Locked</span>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-4">Compare AI and manual decision making in complex scenarios.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-slate-500">Difficulty: Analysis</div>
+                            <button class="bg-slate-200 text-slate-500 px-3 py-1 rounded text-sm cursor-not-allowed" disabled>
+                                Locked
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Metrics -->
+        <div class="bg-white rounded-lg border border-slate-200 shadow-sm">
+            <div class="p-6 border-b border-slate-200">
+                <h2 class="text-xl font-bold text-slate-800">Performance Metrics</h2>
+                <p class="text-slate-600 mt-1">Track your training progress and improvements</p>
+            </div>
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="target" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600 mb-1">87%</div>
+                        <div class="text-sm text-slate-600">Accuracy</div>
+                        <div class="text-xs text-slate-500 mt-1">+5% this week</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="clock" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-green-600 mb-1">2.3s</div>
+                        <div class="text-sm text-slate-600">Avg Response Time</div>
+                        <div class="text-xs text-slate-500 mt-1">-0.5s improvement</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="trending-up" class="w-8 h-8 text-yellow-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-yellow-600 mb-1">94%</div>
+                        <div class="text-sm text-slate-600">Efficiency</div>
+                        <div class="text-xs text-slate-500 mt-1">+3% this week</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <i data-lucide="award" class="w-8 h-8 text-purple-600"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-purple-600 mb-1">12</div>
+                        <div class="text-sm text-slate-600">Scenarios Completed</div>
+                        <div class="text-xs text-slate-500 mt-1">4 more to go</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITO Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-slate-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white border-b border-slate-200 shadow-sm">
+        <div class="px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="train" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-slate-800">SITO Dashboard</h1>
+                            <p class="text-sm text-slate-500">Real-Time Railway Control Center</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <!-- Current Time -->
+                    <div class="flex items-center space-x-2 text-slate-600">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                        <span class="font-mono text-lg" id="currentTime">10:30:45</span>
+                    </div>
+
+                    <!-- Simulation Controls -->
+                    <div class="flex items-center space-x-2">
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                            <i data-lucide="play" class="w-5 h-5"></i>
+                        </button>
+                        <button class="bg-slate-200 hover:bg-slate-300 text-slate-700 p-2 rounded-lg transition-colors">
+                            <i data-lucide="rotate-ccw" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+
+                    <!-- Notifications -->
+                    <button class="bg-slate-200 hover:bg-slate-300 text-slate-700 p-2 rounded-lg transition-colors relative">
+                        <i data-lucide="bell" class="w-5 h-5"></i>
+                        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="p-6">
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-500 mb-2">47</div>
+                    <div class="text-gray-600 text-sm font-medium">Trains Processed</div>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-blue-500 mb-2">23</div>
+                    <div class="text-gray-600 text-sm font-medium">AI Recommendations</div>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-purple-500 mb-2">12</div>
+                    <div class="text-gray-600 text-sm font-medium">Conflicts Resolved</div>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-yellow-500 mb-2">8</div>
+                    <div class="text-gray-600 text-sm font-medium">Delays Prevented</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Section: Railway Network and Train Schedule -->
+        <div class="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <!-- Railway Network Map -->
+            <div class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+                <div class="p-4 border-b border-slate-200">
+                    <h2 class="text-lg font-semibold text-slate-800 flex items-center space-x-2">
+                        <i data-lucide="map" class="w-5 h-5 text-blue-600"></i>
+                        <span>Railway Network Map</span>
+                    </h2>
+                </div>
+                <div class="p-4 h-96 bg-slate-100">
+                    <div class="w-full h-full bg-slate-100 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i data-lucide="map" class="w-16 h-16 text-slate-400 mx-auto mb-4"></i>
+                            <p class="text-slate-500">Interactive Railway Network Map</p>
+                            <p class="text-sm text-slate-400">Real-time train positions and signal status</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Train Schedule -->
+            <div class="bg-white rounded-lg border border-slate-200 shadow-sm overflow-hidden">
+                <div class="p-4 border-b border-slate-200">
+                    <h2 class="text-lg font-semibold text-slate-800 flex items-center space-x-2">
+                        <i data-lucide="calendar" class="w-5 h-5 text-green-600"></i>
+                        <span>Train Schedule</span>
+                    </h2>
+                </div>
+                <div class="p-4 h-96 overflow-y-auto">
+                    <div class="space-y-3">
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-slate-800">Express 12001</h3>
+                                <span class="text-xs px-2 py-1 rounded bg-green-100 text-green-700">On Time</span>
+                            </div>
+                            <div class="text-sm text-slate-600">
+                                <div>Route: Station A → Terminal E</div>
+                                <div>Platform: 2 | Priority: High</div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-slate-800">Freight 24001</h3>
+                                <span class="text-xs px-2 py-1 rounded bg-red-100 text-red-700">Delayed</span>
+                            </div>
+                            <div class="text-sm text-slate-600">
+                                <div>Route: Junction B → Station D</div>
+                                <div>Platform: 1 | Priority: Medium</div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 rounded-lg p-3 border border-slate-200">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-slate-800">Local 34001</h3>
+                                <span class="text-xs px-2 py-1 rounded bg-blue-100 text-blue-700">Early</span>
+                            </div>
+                            <div class="text-sm text-slate-600">
+                                <div>Route: Station C → Station A</div>
+                                <div>Platform: 3 | Priority: Low</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Recommendations Section -->
+        <div class="bg-white rounded-lg border border-slate-200 shadow-sm">
+            <div class="p-4 border-b border-slate-200">
+                <h2 class="text-lg font-semibold text-slate-800 flex items-center space-x-2">
+                    <i data-lucide="brain" class="w-5 h-5 text-purple-600"></i>
+                    <span>AI Recommendations</span>
+                </h2>
+            </div>
+            <div class="p-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="alert-triangle" class="w-5 h-5 text-red-600"></i>
+                            <span class="text-sm font-medium text-red-800">High Priority</span>
+                        </div>
+                        <h3 class="font-semibold text-red-800 mb-1">Signal Congestion Alert</h3>
+                        <p class="text-sm text-red-600 mb-3">Signal at Junction B showing congestion. Recommend rerouting Express 12001.</p>
+                        <button class="bg-red-100 hover:bg-red-200 text-red-700 px-3 py-1 rounded text-sm transition-colors">
+                            Override
+                        </button>
+                    </div>
+                    <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="clock" class="w-5 h-5 text-yellow-600"></i>
+                            <span class="text-sm font-medium text-yellow-800">Medium Priority</span>
+                        </div>
+                        <h3 class="font-semibold text-yellow-800 mb-1">Schedule Optimization</h3>
+                        <p class="text-sm text-yellow-600 mb-3">Optimize platform allocation at Station C to reduce waiting time.</p>
+                        <button class="bg-yellow-100 hover:bg-yellow-200 text-yellow-700 px-3 py-1 rounded text-sm transition-colors">
+                            Override
+                        </button>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-green-600"></i>
+                            <span class="text-sm font-medium text-green-800">Low Priority</span>
+                        </div>
+                        <h3 class="font-semibold text-green-800 mb-1">Energy Efficiency</h3>
+                        <p class="text-sm text-green-600 mb-3">Adjust speed profile for Freight 24001 to save 15% energy.</p>
+                        <button class="bg-green-100 hover:bg-green-200 text-green-700 px-3 py-1 rounded text-sm transition-colors">
+                            Override
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('currentTime').textContent = now.toLocaleTimeString();
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 31, 41, 55;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 249, 250, 251;
+  --surface-rgb: 255, 255, 255;
+  --border-rgb: 229, 231, 235;
+  --text-primary: 31, 41, 55;
+  --text-secondary: 107, 114, 128;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--text-primary));
+  background: rgb(var(--background-start-rgb));
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Light theme specific styles */
+html {
+  color-scheme: light;
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Railway specific styles */
+.railway-track {
+  stroke: #374151;
+  stroke-width: 3;
+  fill: none;
+}
+
+.railway-station {
+  fill: #f59e0b;
+  stroke: #d97706;
+  stroke-width: 2;
+}
+
+.train-marker {
+  fill: #dc2626;
+  stroke: #991b1b;
+  stroke-width: 2;
+}
+
+.signal-green {
+  fill: #16a34a;
+}
+
+.signal-red {
+  fill: #dc2626;
+}
+
+.signal-yellow {
+  fill: #eab308;
+}
+
+/* Clean light theme form inputs */
+input[type="text"], 
+input[type="password"], 
+input[type="email"],
+select {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus,
+select:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Additional specificity for login form */
+form input[type="text"], 
+form input[type="password"], 
+form select {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #1e293b !important;
+}
+
+/* Target specific login form inputs */
+.max-w-md input[type="text"],
+.max-w-md input[type="password"],
+.max-w-md select {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #1e293b !important;
+}
+
+/* Ultra-specific targeting for login form */
+div.max-w-md form div input[type="text"],
+div.max-w-md form div input[type="password"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1e293b !important;
+}
+
+/* Force white background with highest specificity */
+input[type="text"][required],
+input[type="password"][required] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1e293b !important;
+}
+
+/* Light theme utility classes */
+.white-input {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+.light-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.light-surface {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.text-primary {
+  color: #1f2937;
+}
+
+.text-secondary {
+  color: #6b7280;
+}

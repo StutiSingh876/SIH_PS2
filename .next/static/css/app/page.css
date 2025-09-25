@@ -1,0 +1,74 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/input-override.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/* Clean light theme input styles */
+input[type="text"]:not([style*="background-color: white"]),
+input[type="password"]:not([style*="background-color: white"]) {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  background-size: auto !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Target by form structure */
+form > div > input[type="text"],
+form > div > input[type="password"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+/* Target by container class */
+.max-w-md input[type="text"],
+.max-w-md input[type="password"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+/* Force override with attribute selectors */
+input[type="text"][required][class*="border"],
+input[type="password"][required][class*="border"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+/* Nuclear option - target everything */
+* input[type="text"],
+* input[type="password"] {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #1f2937 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+
